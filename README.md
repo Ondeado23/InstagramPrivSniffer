@@ -40,6 +40,45 @@
 
 <br>
 
+## INTERFACES :
+
+### 🖥️ Command-Line Interface (CLI)
+The original CLI tool for quick searches and downloads from the terminal.
+
+### 🌐 Web Interface (NEW)
+A modern, user-friendly web interface built with **Next.js (React)** frontend and **FastAPI** backend.
+
+**Features:**
+- 🎨 Beautiful dark-themed responsive UI
+- 🔍 Real-time search with results display
+- 📸 In-browser media preview
+- 💾 Client-side direct downloads
+- ⏱️ Search history tracking
+- 📱 Mobile-optimized design
+
+**Quick Start Web Interface:**
+```bash
+# Activate virtual environment
+source venv/bin/activate  # or: venv\Scripts\activate on Windows
+
+# Install dependencies
+pip install -r requirements.txt
+pip install fastapi uvicorn python-multipart aiofiles
+
+# Install frontend dependencies
+cd web && npm install && cd ..
+
+# Run both servers (see WEB_INTERFACE.md for details)
+# Terminal 1: python api_server.py
+# Terminal 2: cd web && npm run dev
+
+# Open http://localhost:3000 in your browser
+```
+
+📖 **See [WEB_INTERFACE.md](WEB_INTERFACE.md) for detailed web interface documentation.**
+
+<br>
+
 ## INSTALLATION :   
 1. **Clone the tool**  
    - Click [here](https://github.com/obitouka/InstagramPrivSniffer/archive/refs/heads/main.zip) to download the ZIP file  
